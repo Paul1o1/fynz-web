@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fynz | Self-Employed Tax Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">
+                    <div
+                        style="background: var(--primary); color: white; width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; margin-right: 2px;">
+                        F</div>
+                    <span class="logo-text">FYN IQ</span>
+                </a>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#resources">Resources</a>
+                </div>
+                <div style="display: flex; gap: 1rem;">
+                    <button class="cta-button secondary">Sign In</button>
+                    <button class="cta-button">Get Started</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container" style="display: flex; flex-wrap: wrap; align-items: center; width: 100%;">
+            <div class="hero-content animate-fade-up">
+                <div class="hero-subtitle">
+                    Self-Employed & Gig Economy
+                </div>
+                <h1>Keep More of <br><span class="text-gradient">What You Earn.</span></h1>
+                <p class="hero-text">
+                    The intelligent tax platform built for freelancers, contractors, and solo entrepreneurs.
+                    Automate write-offs and file with confidence.
+                </p>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <button class="cta-button">Choose Assist & Review</button>
+                    <button class="cta-button secondary">View Demo</button>
+                </div>
+            </div>
+
+            <div class="hero-visual animate-fade-up">
+
+                <!-- Background Image -->
+                <div class="hero-bg-wrapper">
+                    <img src="hero-bg.jpg" alt="Tax and Finance" class="hero-bg-image">
+                </div>
+
+                <!-- Floating Elements representing UI -->
+                <div class="floating-card card-1">
+                    <span class="stat-label">Potential Deductions</span>
+                    <span class="stat-value">$12,450</span>
+                    <div style="height: 6px; background: #f3f4f6; border-radius: 3px; margin-top: 10px;">
+                        <div style="width: 70%; height: 100%; background: #a855f7; border-radius: 3px;"></div>
+                    </div>
+                </div>
+
+                <div class="floating-card card-3">
+                    <span class="stat-label">Audit Defence</span>
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                        <span class="stat-value" style="color: #10b981; margin: 0;">Active</span>
+                        <i class="fa-solid fa-shield-check" style="color: #10b981; font-size: 1.2rem;"></i>
+                    </div>
+                </div>
+
+                <div class="floating-card card-2">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 0.5rem;">
+                        <i class="fa-solid fa-cloud-arrow-up" style="color: #3b82f6; font-size: 1.5rem;"></i>
+                        <span class="stat-label"
+                            style="color: var(--text-primary); font-weight: 600;">Auto-Import</span>
+                    </div>
+                    <span style="font-size: 0.85rem; color: var(--text-secondary);">Uber, Quickbooks, & Bank</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Supported Platforms Ticker -->
+    <section class="platforms-section">
+        <div class="platforms-container">
+            <!-- Duplicate content for infinite scroll illusion -->
+            <div class="platforms-track">
+                <div class="platform-logo"><i class="fa-brands fa-uber"></i> Uber</div>
+                <div class="platform-logo"><i class="fa-brands fa-lyft"></i> Lyft</div>
+                <div class="platform-logo"><i class="fa-brands fa-etsy"></i> Etsy</div>
+                <div class="platform-logo"><i class="fa-brands fa-shopify"></i> Shopify</div>
+                <div class="platform-logo"><i class="fa-solid fa-laptop-code"></i> Upwork</div>
+                <div class="platform-logo"><i class="fa-solid fa-pen-nib"></i> Fiverr</div>
+                <div class="platform-logo"><i class="fa-brands fa-airbnb"></i> Airbnb</div>
+                <div class="platform-logo"><i class="fa-brands fa-youtube"></i> YouTube</div>
+                <!-- Duplicate Set -->
+                <div class="platform-logo"><i class="fa-brands fa-uber"></i> Uber</div>
+                <div class="platform-logo"><i class="fa-brands fa-lyft"></i> Lyft</div>
+                <div class="platform-logo"><i class="fa-brands fa-etsy"></i> Etsy</div>
+                <div class="platform-logo"><i class="fa-brands fa-shopify"></i> Shopify</div>
+                <div class="platform-logo"><i class="fa-solid fa-laptop-code"></i> Upwork</div>
+                <div class="platform-logo"><i class="fa-solid fa-pen-nib"></i> Fiverr</div>
+                <div class="platform-logo"><i class="fa-brands fa-airbnb"></i> Airbnb</div>
+                <div class="platform-logo"><i class="fa-brands fa-youtube"></i> YouTube</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="timeline-section">
+        <div class="container">
+            <div class="animate-fade-up" style="text-align: center;">
+                <h2>From Chaos to <span class="text-gradient">Filed.</span></h2>
+                <p style="color: var(--text-secondary);">Three simple steps to tax peace of mind.</p>
+            </div>
+
+            <div class="timeline-steps animate-fade-up">
+                <div class="timeline-step">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Connect Accounts</h3>
+                    <p class="step-desc">Securely link your bank, Uber, or gig platforms. We import your T4As and
+                        expenses automatically.</p>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">AI Review</h3>
+                    <p class="step-desc">Our engine scans every transaction to flag deductible business expenses you
+                        might have missed.</p>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Expert Verify</h3>
+                    <p class="step-desc">A real tax pro reviews your return on screen with you, then files it with the
+                        CRA.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section (From Reference) -->
+    <section id="pricing" class="bg-secondary">
+        <div class="container">
+            <div class="animate-fade-up" style="text-align: center; margin-bottom: 3rem;">
+                <h2>Expert Help On Your Terms</h2>
+                <p style="color: var(--text-secondary);">Choose the plan that fits your business needs.</p>
+            </div>
+
+            <div class="pricing-card animate-fade-up">
+                <h3 style="font-size: 1.5rem;">Assist & Review</h3>
+                <div class="price">
+                    $124.90
+                    <span class="price-sub">/ return</span>
+                </div>
+                <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                    Get unlimited expert help as you do your taxes, and a final review before you file.
+                </p>
+                <button class="cta-button" style="width: 100%;">Get Started</button>
+
+                <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 2rem 0;">
+
+                <ul class="pricing-features">
+                    <li><i class="fa-solid fa-check"></i> Report self-employment, contract, and side gig income</li>
+                    <li><i class="fa-solid fa-check"></i> A tax expert helps find expenses and deductions</li>
+                    <li><i class="fa-solid fa-check"></i> Final review by a tax expert for 100% accuracy</li>
+                    <li><i class="fa-solid fa-check"></i> Supports Uber, Lyft, DoorDash & Skip the Dishes</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Write-Offs Section -->
+    <section class="writeoff-section">
+        <div class="container">
+            <div class="animate-fade-up" style="text-align: center;">
+                <h2>What Can I <span class="text-gradient">Write Off?</span></h2>
+                <p style="color: var(--text-secondary);">Hover to uncover hidden tax savings.</p>
+            </div>
+
+            <div class="writeoff-grid animate-fade-up">
+
+                <div class="writeoff-card">
+                    <div class="writeoff-icon"><i class="fa-solid fa-house-laptop"></i></div>
+                    <h3>Home Office</h3>
+                    <div class="writeoff-tip">Claim a % of rent, utilities, and internet based on workspace size!</div>
+                </div>
+
+                <div class="writeoff-card">
+                    <div class="writeoff-icon"><i class="fa-solid fa-car"></i></div>
+                    <h3>Vehicle</h3>
+                    <div class="writeoff-tip">Track business mileage or claim gas/insurance/repairs %!</div>
+                </div>
+
+                <div class="writeoff-card">
+                    <div class="writeoff-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                    <h3>Phone & Data</h3>
+                    <div class="writeoff-tip">Deduct the business portion of your monthly cell phone bill.</div>
+                </div>
+
+                <div class="writeoff-card">
+                    <div class="writeoff-icon"><i class="fa-solid fa-utensils"></i></div>
+                    <h3>Meals</h3>
+                    <div class="writeoff-tip">50% of food and drink costs for client meetings are deductible.</div>
+                </div>
+
+                <div class="writeoff-card">
+                    <div class="writeoff-icon"><i class="fa-solid fa-suitcase"></i></div>
+                    <h3>Travel</h3>
+                    <div class="writeoff-tip">Flights, hotels, and transit for business trips are 100% write-offs.</div>
+                </div>
+
+                <div class="writeoff-card">
+                    <div class="writeoff-icon"><i class="fa-brands fa-adobe"></i></div>
+                    <h3>Software</h3>
+                    <div class="writeoff-tip">Subscriptions like Adobe, Zoom, or hosting are fully deductible.</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Estimator Section -->
+    <section id="calculator">
+        <div class="container">
+            <div class="animate-fade-up" style="margin-bottom: 3rem; text-align: center;">
+                <h2>How much could <span class="text-gradient">you save?</span></h2>
+                <p style="color: var(--text-secondary);">Find hidden deductions with Fynz IQ.</p>
+            </div>
+
+            <div class="estimator-tool animate-fade-up">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;"
+                    class="estimator-container">
+                    <div class="input-group">
+                        <label
+                            style="display: block; margin-bottom: 1rem; font-weight: 600; color: var(--text-primary);">Annual
+                            Self-Employed Income</label>
+                        <div class="range-input-container">
+                            <div style="display: flex; align-items: center; padding: 0.5rem;">
+                                <span style="font-size: 1.5rem; color: var(--text-secondary);">$</span>
+                                <input type="number" id="yearlyIncome" value="85000"
+                                    style="font-size: 2rem; border: none; background: transparent; width: 100%; padding-left: 0.5rem; outline: none;">
+                            </div>
+                        </div>
+                        <input type="range" id="incomeRange" min="20000" max="300000" value="85000" step="1000"
+                            style="width: 100%; margin-top: 1.5rem; accent-color: var(--primary);">
+
+                        <div style="margin-top: 2rem;">
+                            <div style="display: flex; gap: 1rem; margin-bottom: 0.5rem;">
+                                <i class="fa-solid fa-check" style="color: #10b981;"></i>
+                                <span style="color: var(--text-secondary);">Calculates CPP & EI Contributions</span>
+                            </div>
+                            <div style="display: flex; gap: 1rem;">
+                                <i class="fa-solid fa-check" style="color: #10b981;"></i>
+                                <span style="color: var(--text-secondary);">Identifies GST/HST Obligations</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="result-card">
+                        <div
+                            style="text-transform: uppercase; letter-spacing: 0.05em; font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
+                            Potential Savings</div>
+                        <div id="estimatedSavings" class="result-amount"
+                            style="font-size: 4rem; font-weight: 800; line-height: 1;">$2,550</div>
+                        <div
+                            style="background: white; padding: 1rem; border-radius: 8px; margin-top: 2rem; display: flex; align-items: center; gap: 1rem;">
+                            <div
+                                style="background: #ecfdf5; color: #10b981; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%;">
+                                <i class="fa-solid fa-piggy-bank"></i>
+                            </div>
+                            <span style="font-size: 0.9rem; color: var(--text-secondary);">Benchmark: set aside 25-30%
+                                for taxes.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="bg-secondary">
+        <div class="container">
+            <div class="animate-fade-up" style="text-align: center;">
+                <h2>Trusted by over <span class="text-gradient">1 million people.</span></h2>
+            </div>
+
+            <div class="testimonial-grid">
+                <div class="testimonial-card animate-fade-up">
+                    <div class="quote-icon">“</div>
+                    <p class="testimonial-text">I had a few things I was unsure about as a first-year self-employed
+                        individual and having the call with the tax expert was a LIFE-SAVER!</p>
+                    <div class="testimonial-author">— Z, Calgary, Alberta</div>
+                </div>
+
+                <div class="testimonial-card animate-fade-up" style="transition-delay: 0.1s;">
+                    <div class="quote-icon">“</div>
+                    <p class="testimonial-text">When I became self-employed, I decided to use Full Service. This is my
+                        second year with tax expert Natalija. I give her 10 out of 10.</p>
+                    <div class="testimonial-author">— Joe, Toronto, Ontario</div>
+                </div>
+
+                <div class="testimonial-card animate-fade-up" style="transition-delay: 0.2s;">
+                    <div class="quote-icon">“</div>
+                    <p class="testimonial-text">FYN iQ Self-Employed is very intuitive to use and self-explanatory.
+                        Doing one's taxes has never been that easy!</p>
+                    <div class="testimonial-author">— M, Vancouver, BC</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section: Old Way vs Fynz Way -->
+    <section class="section-comparison">
+        <div class="container">
+            <div class="section-header text-center" style="margin-bottom: 3rem;">
+                <h2>Why Switch to <span class="text-gradient">Fynz</span>?</h2>
+                <p class="section-subtitle" style="color: var(--text-secondary);">Stop doing it the hard way.</p>
+            </div>
+
+            <div class="comparison-container">
+                <!-- The Old Way -->
+                <div class="comparison-card old-way">
+                    <h3>The Old Way</h3>
+                    <ul class="comparison-list">
+                        <li>
+                            <i class="fa-solid fa-xmark-circle"></i>
+                            <span>Messy spreadsheets & shoeboxes</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-xmark-circle"></i>
+                            <span>Missed deductions & overpaying</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-xmark-circle"></i>
+                            <span>Stressful last-minute filing</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-xmark-circle"></i>
+                            <span>Fear of audits & penalties</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- VS Badge -->
+                <div class="vs-badge">VS</div>
+
+                <!-- The Fynz Way -->
+                <div class="comparison-card fynz-way">
+                    <h3>The Fynz Way</h3>
+                    <ul class="comparison-list">
+                        <li>
+                            <i class="fa-solid fa-check-circle"></i>
+                            <span>Auto-import from bank & apps</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check-circle"></i>
+                            <span>Real-time tax estimates</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check-circle"></i>
+                            <span>Maximize refund automatically</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check-circle"></i>
+                            <span>Full Audit Defence included</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Understanding Self-Employed Tax Section -->
+    <section class="bg-secondary">
+        <div class="container">
+            <div class="animate-fade-up" style="text-align: center; margin-bottom: 3rem;">
+                <h2>Understanding Self-Employed <br><span class="text-gradient">Income Tax Filing</span></h2>
+                <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto; margin-top: 1rem;">
+                    Key information to help you navigate your first filing with confidence.
+                </p>
+            </div>
+
+            <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+
+                <!-- Card 1 -->
+                <div class="flip-card animate-fade-up">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="flip-icon-wrapper">
+                                <i class="fa-solid fa-user-tag"></i>
+                            </div>
+                            <h3 style="font-size: 1.25rem; font-weight: 700;">Who is <br>Self-Employed?</h3>
+                            <div class="flip-hint"><i class="fa-solid fa-rotate"></i> Hover to learn</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3 style="margin-bottom: 1rem;">The Definition</h3>
+                            <p>If you work for yourself, have a side hustle, or are an independent contractor, you are
+                                self-employed. This applies <strong>even if you also have a full-time job.</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="flip-card animate-fade-up" style="transition-delay: 0.1s;">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="flip-icon-wrapper">
+                                <i class="fa-solid fa-file-signature"></i>
+                            </div>
+                            <h3 style="font-size: 1.25rem; font-weight: 700;">What is <br>Form T2125?</h3>
+                            <div class="flip-hint"><i class="fa-solid fa-rotate"></i> Hover to learn</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3 style="margin-bottom: 1rem;">Statement of Business</h3>
+                            <p>This is the standard form used to report all your self-employment income and expenses to
+                                the CRA. It's essential for filing.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="flip-card animate-fade-up" style="transition-delay: 0.2s;">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="flip-icon-wrapper">
+                                <i class="fa-solid fa-calculator"></i>
+                            </div>
+                            <h3 style="font-size: 1.25rem; font-weight: 700;">How is Tax <br>Calculated?</h3>
+                            <div class="flip-hint"><i class="fa-solid fa-rotate"></i> Hover to learn</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3 style="margin-bottom: 1rem;">Tax on Profit</h3>
+                            <p>Total Income - Eligible Expenses = <strong>Net Income</strong>. <br><br>You are only
+                                taxed on this Net Income amount, not your total revenue.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="flip-card animate-fade-up" style="transition-delay: 0.3s;">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="flip-icon-wrapper">
+                                <i class="fa-solid fa-shop"></i>
+                            </div>
+                            <h3 style="font-size: 1.25rem; font-weight: 700;">What is the <br>$30k Rule?</h3>
+                            <div class="flip-hint"><i class="fa-solid fa-rotate"></i> Hover to learn</div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3 style="margin-bottom: 1rem;">GST/HST Registration</h3>
+                            <p>Once you earn more than <strong>$30,000</strong> in a single year (or any 4 consecutive
+                                quarters), you <strong>must</strong> register for a GST/HST number.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="container" style="max-width: 900px;">
+            <div class="animate-fade-up" style="text-align: center; margin-bottom: 3rem;">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+
+            <div class="accordion animate-fade-up">
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        When are taxes due for self-employed Canadians?
+                        <span class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>If you're self-employed, you have until June 15, 2025 to file your tax return. But remember,
+                            any balance owed must still be paid by April 30, 2025. If you have self-employment income,
+                            it's a good idea to prepare your tax return well before April 30 to calculate if you have a
+                            balance owed.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        How much money should I set aside for taxes?
+                        <span class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>It depends on your situation, but a good benchmark is to set aside 25% to 30% of your income
+                            earned to cover self-employed taxes including federal income tax, provincial income tax, and
+                            GST/HST sales tax.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        How do I calculate CPP and EI if self-employed?
+                        <span class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>CPP contributions are based on your net self-employment income between the minimum ($3,500)
+                            and maximum ceiling. The self-employed contribution rate is 11.4%. You generally do not have
+                            to pay EI premiums unless you opt into the EI benefits program for self-employed
+                            individuals.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Can I be an employee and self-employed?
+                        <span class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Yes. You can be an employee and an independent contractor at the same time. Determining your
+                            status depends on the nature of the work relationship, control over work, ownership of
+                            tools, and opportunity for profit/risk.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        How do I file a GST/HST return?
+                        <span class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>To file, you need to register for a GST/HST number, select an accounting method, and know
+                            your due dates. You'll calculate total sales, tax collected, and tax paid (Input Tax
+                            Credits). You can file online through GST/HST NETFILE or allow a tax expert to handle it for
+                            you.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Banner -->
+    <section class="cta-banner-section">
+        <div class="container">
+            <div class="cta-banner">
+                <div class="cta-content">
+                    <h2>Ready to keep more of what you earn?</h2>
+                    <p>Join over 1 million self-employed professionals who trust Fynz.</p>
+                    <div class="cta-buttons">
+                        <button class="cta-button secondary-style">Get Started Free</button>
+                        <span class="cta-note">No credit card required</span>
+                    </div>
+                </div>
+                <div class="cta-visual-decoration">
+                    <i class="fa-solid fa-rocket launch-icon"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 3rem;">
+                <div>
+                    <a href="#" class="logo" style="margin-bottom: 1.5rem;">
+                        <span class="logo-text">FYN IQ</span>
+                    </a>
+                    <p style="color: #94a3b8; max-width: 300px;">
+                        The smartest way to file taxes for the modern economy.
+                    </p>
+                </div>
+
+                <div style="display: flex; gap: 4rem; flex-wrap: wrap;">
+                    <div>
+                        <h4 style="color: white; margin-bottom: 1.5rem;">Resources</h4>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem;">
+                            <li><a href="#">Self-Employment Tips</a></li>
+                            <li><a href="#">Gig Work Taxes</a></li>
+                            <li><a href="#">Tax Deadlines</a></li>
+                            <li><a href="#">Calculator</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 style="color: white; margin-bottom: 1.5rem;">Company</h4>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem;">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                style="border-top: 1px solid #334155; margin-top: 4rem; padding-top: 2rem; color: #64748b; font-size: 0.875rem;">
+                &copy; 2026 Fynz Inc. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
