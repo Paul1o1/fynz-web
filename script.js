@@ -71,12 +71,13 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('visible');
+            entry.target.classList.add('show-animate'); // Trigger for specific animations
             observer.unobserve(entry.target);
         }
     });
 }, observerOptions);
 
-document.querySelectorAll('.animate-fade-up').forEach(el => {
+document.querySelectorAll('.animate-fade-up, .animate-slide-left, .animate-slide-right, .animate-zoom-in').forEach(el => {
     observer.observe(el);
 });
 
@@ -103,4 +104,36 @@ accordionHeaders.forEach(header => {
 // Initialize Calculator
 if (incomeInput) {
     updateValues(85000);
+}
+
+/* --- Student Page Logic --- */
+const tuitionInput = document.getElementById('tuitionFees');
+const tuitionRange = document.getElementById('tuitionRange');
+const creditDisplay = document.getElementById('estimatedCredit');
+
+const calculateStudentCredit = (tuition) => {
+    // Approx 15% Federal + ~5-10% Provincial (using 20% conservative estimate for simplicity)
+    const creditRate = 0.15;
+    return Math.floor(tuition * creditRate);
+};
+
+const updateStudentValues = (value) => {
+    const credit = calculateStudentCredit(value);
+    animateValue(creditDisplay, parseInt(creditDisplay.innerText.replace(/[^0-9]/g, '')), credit, 500);
+    tuitionInput.value = value;
+    tuitionRange.value = value;
+};
+
+if (tuitionInput && tuitionRange) {
+    tuitionInput.addEventListener('input', (e) => {
+        let val = parseInt(e.target.value) || 0;
+        updateStudentValues(val);
+    });
+
+    tuitionRange.addEventListener('input', (e) => {
+        updateStudentValues(parseInt(e.target.value));
+    });
+
+    // Initialize for Student Page
+    updateStudentValues(8000);
 }

@@ -1023,6 +1023,32 @@ footer a:hover {
   box-shadow: var(--shadow-glow);
 }
 
+.hero {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  padding-top: 100px;
+  /* Offset for fixed header */
+  gap: 4rem;
+}
+
+/* Student Hero Specific Override for Full Width Visual */
+.hero.student-hero {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero.student-hero .hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .cta-content {
   max-width: 600px;
   z-index: 2;
@@ -1095,4 +1121,53 @@ footer a:hover {
     top: 20px;
     right: 20px;
   }
+}
+
+/* --- Checklist Section --- */
+.checklist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.checklist-item {
+  background: white;
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light);
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.checklist-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: #cbd5e1;
+}
+
+.checklist-number {
+  width: 40px;
+  height: 40px;
+  background: var(--bg-secondary);
+  color: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.25rem;
+  margin: 0 auto 1.5rem;
+}
+
+.checklist-item h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
+}
+
+.checklist-item p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
 }

@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fynz | Student Tax Freedom</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="student-page">
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">
+                    <div
+                        style="background: var(--primary); color: white; width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; margin-right: 2px;">
+                        F</div>
+                    <span class="logo-text">FYN IQ</span>
+                </a>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#resources">Resources</a>
+                </div>
+                <div style="display: flex; gap: 1rem;">
+                    <button class="cta-button secondary">Sign In</button>
+                    <button class="cta-button">Get Started</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <!-- Hero Section (Center Aligned for Student Page) -->
+    <section class="hero student-hero">
+        <div class="container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div class="hero-subtitle">
+                Student Tax Filing
+            </div>
+            <h1>Maximize Your <br><span class="text-gradient">Student Refund.</span></h1>
+            <p class="hero-text" style="max-width: 700px; margin-left: auto; margin-right: auto;">
+                Tuition credits, moving expenses, and loan interest. We find every dollar you deserve so you can
+                focus on exams (or whatever else you do).
+            </p>
+
+            <div
+                style="margin-bottom: 2rem; display: flex; align-items: center; gap: 0.5rem; background: #f0fdf4; padding: 0.5rem 1rem; border-radius: 2rem; width: fit-content; border: 1px solid #bbf7d0;">
+                <i class="fa-solid fa-globe" style="color: #16a34a;"></i>
+                <span style="color: #166534; font-size: 0.9rem; font-weight: 500;">International Students
+                    Welcome</span>
+            </div>
+
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; margin-bottom: 3rem;">
+                <button class="cta-button">File for Free*</button>
+                <button class="cta-button secondary">Learn More</button>
+            </div>
+
+        </div><!-- End Container for Text -->
+
+        <!-- Hero Visual (Full Width) -->
+        <div class="hero-visual-wide animate-fade-up visible show-animate"
+            style="width: 100%; position: relative; margin-top: 2rem;">
+            <div class="floating-card card-1" style="top: -20px; left: 5%;">
+                <span class="stat-label">Tuition Credits</span>
+                <span class="stat-value">$4,500</span>
+                <div style="height: 6px; background: #f3f4f6; border-radius: 3px; margin-top: 10px;">
+                    <div style="width: 85%; height: 100%; background: #a855f7; border-radius: 3px;"></div>
+                </div>
+            </div>
+
+            <div class="floating-card card-3" style="bottom: -20px; right: 5%; top: auto;">
+                <span class="stat-label">Refund Status</span>
+                <div style="display: flex; align-items: center; gap: 8px;">
+                    <span class="stat-value" style="color: #10b981; margin: 0;">Approved</span>
+                    <i class="fa-solid fa-check-circle" style="color: #10b981; font-size: 1.2rem;"></i>
+                </div>
+            </div>
+
+            <img src="hero-bg.jpg" alt="Student Lifestyle"
+                style="width: 100%; height: 500px; object-fit: cover; border-radius: 0; box-shadow: none;">
+        </div>
+    </section>
+
+    <!-- Supported Schools Ticker -->
+    <section class="platforms-section">
+        <div class="platforms-container">
+            <div class="platforms-track">
+                <div class="platform-logo"><i class="fa-solid fa-university"></i> U of T</div>
+                <div class="platform-logo"><i class="fa-solid fa-university"></i> UBC</div>
+                <div class="platform-logo"><i class="fa-solid fa-university"></i> McGill</div>
+                <div class="platform-logo"><i class="fa-solid fa-university"></i> Waterloo</div>
+                <div class="platform-logo"><i class="fa-solid fa-university"></i> McMaster</div>
+                <div class="platform-logo"><i class="fa-solid fa-university"></i> Western</div>
+                <div class="platform-logo"><i class="fa-solid fa-university"></i> Queen's</div>
+                <div class="platform-logo"><i class="fa-solid fa-university"></i> Alberta</div>
+                <!-- Duplicate Set -->
+                <div class="platform-logo"><i class="fa-solid fa-university"></i> U of T</div>
+                <div class="platform-logo"><i class="fa-solid fa-university"></i> UBC</div>
+                <div class="platform-logo"><i class="fa-solid fa-university"></i> McGill</div>
+                <div class="platform-logo"><i class="fa-solid fa-university"></i> Waterloo</div>
+                <div class="platform-logo"><i class="fa-solid fa-university"></i> McMaster</div>
+                <div class="platform-logo"><i class="fa-solid fa-university"></i> Western</div>
+                <div class="platform-logo"><i class="fa-solid fa-university"></i> Queen's</div>
+                <div class="platform-logo"><i class="fa-solid fa-university"></i> Alberta</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Did You Know? (Free Cash) Section -->
+    <section class="bg-secondary">
+        <div class="container">
+            <div class="animate-fade-up"
+                style="display: flex; flex-direction: column; align-items: center; text-align: center; max-width: 800px; margin: 0 auto;">
+                <div
+                    style="background: #e0e7ff; color: var(--primary); width: 64px; height: 64px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.5rem;">
+                    <i class="fa-solid fa-lightbulb"></i>
+                </div>
+                <h2>Did you know? <span class="text-gradient">No income = Free money.</span></h2>
+                <p style="font-size: 1.25rem; color: var(--text-secondary); margin-top: 1rem;">
+                    Even if you earned $0, filing taxes makes you eligible for government payments like the
+                    <strong>GST/HST Credit</strong> and <strong>Carbon Tax Rebate</strong>.
+                </p>
+                <div
+                    style="margin-top: 2rem; padding: 1.5rem; background: white; border: 1px solid #e2e8f0; border-radius: 1rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+                    <div style="font-weight: 700; color: #10b981; font-size: 2rem; margin-bottom: 0.5rem;">Up to $500+ /
+                        year</div>
+                    <div style="color: var(--text-secondary);">In straight cash deposits to your bank account. Just for
+                        filing.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Life Stages Section -->
+    <section>
+        <div class="container">
+            <div class="animate-fade-up" style="text-align: center; margin-bottom: 3rem;">
+                <h2>Every Stage of <span class="text-gradient">Student Life</span></h2>
+                <p style="color: var(--text-secondary);">We've got you covered from frosh week to graduation.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon" style="background: #e0e7ff; color: #4338ca;">
+                        <i class="fa-solid fa-shapes"></i>
+                    </div>
+                    <h3 class="feature-title">First Year</h3>
+                    <p style="color: var(--text-secondary);">Even with no income, filing gets you the GST/HST credit and
+                        builds rrsp room.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon" style="background: #dcfce7; color: #15803d;">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <h3 class="feature-title">Co-op & Interns</h3>
+                    <p style="color: var(--text-secondary);">Report T4 income from work terms and deduct eligible
+                        employment expenses.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon" style="background: #fae8ff; color: #a21caf;">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+                    <h3 class="feature-title">Graduation</h3>
+                    <p style="color: var(--text-secondary);">Moving for your first real job? Deduct moving costs and
+                        carry forward tuition credits.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checklist Section -->
+    <section>
+        <div class="container">
+            <div class="animate-fade-up" style="text-align: center; margin-bottom: 3rem;">
+                <h2>Simple Student <span class="text-gradient">Checklist</span></h2>
+                <p style="color: var(--text-secondary);">Grab these 4 things and you're ready to go.</p>
+            </div>
+
+            <div class="checklist-grid animate-fade-up">
+                <div class="checklist-item">
+                    <div class="checklist-number">1</div>
+                    <h3>T2202 Form</h3>
+                    <p>Download this from your university or college student portal.</p>
+                </div>
+                <div class="checklist-item">
+                    <div class="checklist-number">2</div>
+                    <h3>T4 Slips</h3>
+                    <p>Only if you had a part-time job or summer internship.</p>
+                </div>
+                <div class="checklist-item">
+                    <div class="checklist-number">3</div>
+                    <h3>Direct Deposit Info</h3>
+                    <p>So the CRA can deposit your refund straight to your bank.</p>
+                </div>
+                <div class="checklist-item">
+                    <div class="checklist-number">4</div>
+                    <h3>Date of Entry</h3>
+                    <p><strong>International Students only:</strong> The date you arrived in Canada.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Parent Trap Section -->
+    <section class="bg-secondary" style="overflow: hidden;">
+        <div class="container">
+            <div class="animate-fade-up" style="text-align: center; margin-bottom: 3rem;">
+                <h2>The <span class="text-gradient">Parent Trap</span></h2>
+                <p style="color: var(--text-secondary);">Should mom and dad do it?</p>
+            </div>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
+
+                <!-- Option A -->
+                <div
+                    style="background: white; padding: 2rem; border-radius: 1.5rem; flex: 1; min-width: 300px; max-width: 500px; border: 1px solid var(--border-light); position: relative;">
+                    <div
+                        style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: #f1f5f9; padding: 0.5rem 1rem; border-radius: 1rem; font-weight: 700; font-size: 0.8rem; letter-spacing: 0.05em; text-transform: uppercase;">
+                        Option A</div>
+                    <h3 style="text-align: center; margin-bottom: 1rem;">File with Parents</h3>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem;">
+                        <li style="display: flex; gap: 0.75rem;"><i class="fa-solid fa-check"
+                                style="color: #10b981;"></i> <span>Easy transfer of tuition credits</span></li>
+                        <li style="display: flex; gap: 0.75rem;"><i class="fa-solid fa-check"
+                                style="color: #10b981;"></i> <span>They pay the filing fee (usually)</span></li>
+                        <li style="display: flex; gap: 0.75rem;"><i class="fa-solid fa-exclamation-circle"
+                                style="color: #f59e0b;"></i> <span>They see your income/spending</span></li>
+                    </ul>
+                </div>
+
+                <!-- Option B -->
+                <div
+                    style="background: white; padding: 2rem; border-radius: 1.5rem; flex: 1; min-width: 300px; max-width: 500px; border: 2px solid var(--primary); position: relative; box-shadow: var(--shadow-lg);">
+                    <div
+                        style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--primary); color: white; padding: 0.5rem 1rem; border-radius: 1rem; font-weight: 700; font-size: 0.8rem; letter-spacing: 0.05em; text-transform: uppercase;">
+                        Option B (Recommended)</div>
+                    <h3 style="text-align: center; margin-bottom: 1rem;">File Yourself</h3>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem;">
+                        <li style="display: flex; gap: 0.75rem;"><i class="fa-solid fa-check"
+                                style="color: #10b981;"></i> <span>100% Privacy</span></li>
+                        <li style="display: flex; gap: 0.75rem;"><i class="fa-solid fa-check"
+                                style="color: #10b981;"></i> <span>Direct Deposit to YOUR account</span></li>
+                        <li style="display: flex; gap: 0.75rem;"><i class="fa-solid fa-check"
+                                style="color: #10b981;"></i> <span>Fynz makes it free anyway</span></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Process Section -->
+    <section class="timeline-section">
+        <div class="container">
+            <div class="animate-fade-up" style="text-align: center;">
+                <h2>Our <span class="text-gradient">Process</span></h2>
+                <p style="font-size: 1.25rem; color: var(--text-primary); margin-bottom: 0.5rem; font-weight: 600;">
+                    Grades are hard. Taxes are easy.</p>
+                <p style="color: var(--text-secondary);">Get it done in minutes, not hours.</p>
+            </div>
+
+            <div class="timeline-steps">
+                <div class="timeline-step animate-slide-left">
+                    <div class="step-visual">
+                        <div
+                            style="width: 64px; height: 64px; background: #e0e7ff; color: #4338ca; border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; margin-bottom: 1.5rem;">
+                            <i class="fa-solid fa-plug"></i>
+                        </div>
+                    </div>
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Connect CRA</h3>
+                    <p class="step-desc">Link your CRA My Account to automatically import tuition slips (T2202) and
+                        income.</p>
+                </div>
+                <div class="timeline-step animate-slide-right">
+                    <div class="step-visual">
+                        <div
+                            style="width: 64px; height: 64px; background: #dcfce7; color: #15803d; border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; margin-bottom: 1.5rem;">
+                            <i class="fa-solid fa-clipboard-question"></i>
+                        </div>
+                    </div>
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Answer Questions</h3>
+                    <p class="step-desc">Simple "yes or no" questions about rent, moving expenses, and student loans.
+                    </p>
+                </div>
+                <div class="timeline-step animate-slide-left">
+                    <div class="step-visual">
+                        <div
+                            style="width: 64px; height: 64px; background: #fae8ff; color: #a21caf; border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; margin-bottom: 1.5rem;">
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                        </div>
+                    </div>
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Get Refund</h3>
+                    <p class="step-desc">We optimize your return to maximize your refund or carry-forward credits.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="bg-secondary">
+        <div class="container">
+            <div class="animate-fade-up" style="text-align: center; margin-bottom: 3rem;">
+                <h2>Priced for <span class="text-gradient">Students</span></h2>
+                <p style="color: var(--text-secondary);">Keep your money for textbooks (or pizza).</p>
+            </div>
+
+            <div class="pricing-card animate-zoom-in">
+                <h3 style="font-size: 1.5rem;">Student Basic</h3>
+                <div class="price">
+                    $0
+                    <span class="price-sub">/ return*</span>
+                </div>
+                <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                    Free for simple returns. Upgrade only if you need expert review.
+                </p>
+                <button class="cta-button" style="width: 100%;">Start for Free</button>
+
+                <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 2rem 0;">
+
+                <ul class="pricing-features">
+                    <li><i class="fa-solid fa-check"></i> Standard T4 slips</li>
+                    <li><i class="fa-solid fa-check"></i> Tuition credits (T2202)</li>
+                    <li><i class="fa-solid fa-check"></i> GST/HST Credit application</li>
+                    <li><i class="fa-solid fa-check"></i> Climate Action Incentive</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credits & Deductions Section -->
+    <section class="writeoff-section">
+        <div class="container">
+            <div class="animate-fade-up" style="text-align: center;">
+                <h2>What Can I <span class="text-gradient">Claim?</span></h2>
+                <p style="color: var(--text-secondary);">Don't leave money on the table.</p>
+            </div>
+
+            <div class="writeoff-grid animate-fade-up">
+
+                <div class="writeoff-card">
+                    <div class="writeoff-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h3>Tuition</h3>
+                    <div class="writeoff-tip">Claim your eligible tuition fees to reduce tax payable or carry forward.
+                    </div>
+                </div>
+
+                <div class="writeoff-card">
+                    <div class="writeoff-icon"><i class="fa-solid fa-percent"></i></div>
+                    <h3>Loan Interest</h3>
+                    <div class="writeoff-tip">Interest paid on government student loans is tax-deductible.</div>
+                </div>
+
+                <div class="writeoff-card">
+                    <div class="writeoff-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                    <h3>Moving Expenses</h3>
+                    <div class="writeoff-tip">Moved 40km+ for school? You might be able to claim travel costs.</div>
+                </div>
+
+                <div class="writeoff-card">
+                    <div class="writeoff-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                    <h3>GST/HST Credit</h3>
+                    <div class="writeoff-tip">We automatically apply for this quarterly payment for low-income earners.
+                    </div>
+                </div>
+
+                <div class="writeoff-card">
+                    <div class="writeoff-icon"><i class="fa-solid fa-leaf"></i></div>
+                    <h3>Climate Action</h3>
+                    <div class="writeoff-tip">Get the carbon tax rebate directly deposited into your account.</div>
+                </div>
+
+                <div class="writeoff-card">
+                    <div class="writeoff-icon"><i class="fa-solid fa-book-open"></i></div>
+                    <h3>Scholarships</h3>
+                    <div class="writeoff-tip">Most scholarships and bursaries are tax-exempt, but must be reported
+                        correctly.</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Loan Estimator -->
+    <section id="calculator">
+        <div class="container">
+            <div class="animate-fade-up" style="margin-bottom: 3rem; text-align: center;">
+                <h2>Estimate Your <span class="text-gradient">Tuition Credits</span></h2>
+                <p style="color: var(--text-secondary);">See how much tax credit you could generate.</p>
+            </div>
+
+            <div class="estimator-tool animate-fade-up">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;"
+                    class="estimator-container">
+                    <div class="input-group">
+                        <label
+                            style="display: block; margin-bottom: 1rem; font-weight: 600; color: var(--text-primary);">Total
+                            Tuition Fees Value</label>
+                        <div class="range-input-container">
+                            <div style="display: flex; align-items: center; padding: 0.5rem;">
+                                <span style="font-size: 1.5rem; color: var(--text-secondary);">$</span>
+                                <input type="number" id="tuitionFees" value="8000"
+                                    style="font-size: 2rem; border: none; background: transparent; width: 100%; padding-left: 0.5rem; outline: none;">
+                            </div>
+                        </div>
+                        <input type="range" id="tuitionRange" min="1000" max="50000" value="8000" step="500"
+                            style="width: 100%; margin-top: 1.5rem; accent-color: var(--primary);">
+
+                        <div style="margin-top: 2rem;">
+                            <div style="display: flex; gap: 1rem; margin-bottom: 0.5rem;">
+                                <i class="fa-solid fa-check" style="color: #10b981;"></i>
+                                <span style="color: var(--text-secondary);">Federal Tuition Credit (15%)</span>
+                            </div>
+                            <div style="display: flex; gap: 1rem;">
+                                <i class="fa-solid fa-check" style="color: #10b981;"></i>
+                                <span style="color: var(--text-secondary);">Provincial Credits (varies)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="result-card">
+                        <div
+                            style="text-transform: uppercase; letter-spacing: 0.05em; font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
+                            Estimated Tax Credit Value</div>
+                        <div id="estimatedCredit" class="result-amount"
+                            style="font-size: 4rem; font-weight: 800; line-height: 1;">$1,200</div>
+                        <div
+                            style="background: white; padding: 1rem; border-radius: 8px; margin-top: 2rem; display: flex; align-items: center; gap: 1rem;">
+                            <div
+                                style="background: #ecfdf5; color: #10b981; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%;">
+                                <i class="fa-solid fa-wallet"></i>
+                            </div>
+                            <span style="font-size: 0.9rem; color: var(--text-secondary);">Reduces tax owed or carries
+                                forward to future years.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="bg-secondary">
+        <div class="container">
+            <div class="animate-fade-up" style="text-align: center;">
+                <h2>Students <span class="text-gradient">Love Us.</span></h2>
+            </div>
+
+            <div class="testimonial-grid stacking-cards-container">
+                <div class="testimonial-card stacking-card">
+                    <div class="quote-icon">“</div>
+                    <p class="testimonial-text">I honestly had no idea I could get money back even though I didn't work.
+                        Fynz found me $400 in GST credits!</p>
+                    <div class="testimonial-author">— Sarah, U of T</div>
+                </div>
+
+                <div class="testimonial-card stacking-card">
+                    <div class="quote-icon">“</div>
+                    <p class="testimonial-text">Being an international student, I was scared to file. This was so easy
+                        and explained everything about my residency status.</p>
+                    <div class="testimonial-author">— Raj, UBC</div>
+                </div>
+
+                <div class="testimonial-card stacking-card">
+                    <div class="quote-icon">“</div>
+                    <p class="testimonial-text">My parents usually do my taxes but I wanted to try it myself. Took me 10
+                        minutes on my phone between classes.</p>
+                    <div class="testimonial-author">— Mike, McGill</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="container" style="max-width: 900px;">
+            <div class="animate-fade-up" style="text-align: center; margin-bottom: 3rem;">
+                <h2>Student FAQ</h2>
+            </div>
+
+            <div class="accordion animate-fade-up">
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Do I need to file taxes if I made no money?
+                        <span class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Yes, you should! Filing allows you to claim tuition credits (which you can use later when you
+                            are earning money to reduce your tax bill) and applying for the GST/HST credit, which pays
+                            you quarterly cash payments.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        I'm an international student. Can I file?
+                        <span class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Yes! International students are often eligible for the GST/HST credit and other benefits. You
+                            just need your Social Insurance Number (SIN) and your date of entry into Canada (which we'll
+                            ask for).</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Can my parents file for me?
+                        <span class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Absolutely. Fynz makes it easy for parents to prepare returns for their children. Plus, we
+                            handle the <strong>Tuition Credit Transfer</strong> so you can easily transfer unused
+                            tuition credits to a parent or grandparent.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        What is a T2202 form?
+                        <span class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>The T2202 (Tuition and Enrolment Certificate) is a form your school issues that certifies
+                            your eligibility for tuition tax credits. Fynz can auto-import this from your CRA account.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Banner -->
+    <section class="cta-banner-section">
+        <div class="container">
+            <div class="cta-banner">
+                <div class="cta-content">
+                    <h2>Ready to get your refund?</h2>
+                    <p>It takes less than 15 minutes.</p>
+                    <div class="cta-buttons">
+                        <button class="cta-button secondary-style">Sign Up Free</button>
+                    </div>
+                </div>
+                <div class="cta-visual-decoration">
+                    <i class="fa-solid fa-paper-plane launch-icon"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 3rem;">
+                <div>
+                    <a href="#" class="logo" style="margin-bottom: 1.5rem;">
+                        <span class="logo-text">FYN IQ</span>
+                    </a>
+                    <p style="color: #94a3b8; max-width: 300px;">
+                        The smartest way to file taxes for the modern economy.
+                    </p>
+                </div>
+
+                <div style="display: flex; gap: 4rem; flex-wrap: wrap;">
+                    <div>
+                        <h4 style="color: white; margin-bottom: 1.5rem;">Resources</h4>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem;">
+                            <li><a href="#">Student Tips</a></li>
+                            <li><a href="#">Tuition Credits</a></li>
+                            <li><a href="#">Tax Deadlines</a></li>
+                            <li><a href="#">Calculator</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 style="color: white; margin-bottom: 1.5rem;">Company</h4>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem;">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                style="border-top: 1px solid #334155; margin-top: 4rem; padding-top: 2rem; color: #64748b; font-size: 0.875rem;">
+                &copy; 2026 Fynz Inc. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
