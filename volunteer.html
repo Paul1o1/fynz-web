@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer with FYN IQ | CVITP Training & Certification</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Internal styles for specific overrides or new components not in main css yet */
+        .cvitp-hero {
+            background-color: var(--primary-deep);
+            color: white;
+            padding-top: 8rem;
+            padding-bottom: 6rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cvitp-hero h1 {
+            color: white;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+        }
+
+        .cvitp-hero p {
+            color: #e2e8f0;
+            font-size: 1.25rem;
+            max-width: 600px;
+        }
+
+        .btn-orange {
+            background: var(--accent-orange);
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-orange:hover {
+            background: #e67e00;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-outline-white {
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            background: transparent;
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.2s;
+        }
+
+        .btn-outline-white:hover {
+            border-color: white;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .section-heading-deep {
+            color: var(--primary-deep);
+        }
+
+        .benefit-icon {
+            width: 48px;
+            height: 48px;
+            background: #e0e7ff;
+            color: var(--primary-deep);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+
+        .role-card {
+            background: white;
+            border: 1px solid var(--border-light);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            transition: transform 0.2s;
+        }
+
+        .role-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--primary-deep);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <div
+                        style="background: var(--primary-deep); color: white; width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; margin-right: 2px;">
+                        F</div>
+                    <span class="logo-text" style="color: var(--primary-deep);">FYN IQ — CVITP</span>
+                </a>
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#training">Volunteer Training</a>
+                    <a href="#clients">For Clients</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <div style="display: flex; gap: 1rem;">
+                    <a href="https://forms.gle/your-form-link" target="_blank" class="btn-orange">Apply</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="cvitp-hero">
+        <div class="container">
+            <div style="display: flex; flex-direction: column; max-width: 800px;">
+                <div
+                    style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.1); padding: 0.5rem 1rem; border-radius: 2rem; width: fit-content; margin-bottom: 1.5rem; border: 1px solid rgba(255,255,255,0.2);">
+                    <i class="fa-solid fa-hand-holding-heart" style="color: var(--accent-orange);"></i>
+                    <span style="font-weight: 500; font-size: 0.9rem;">Join our Community Volunteer Income Tax
+                        Program</span>
+                </div>
+                <h1 class="animate-slide-left">Volunteer with FYN IQ.<br>Audit your skills.</h1>
+                <p class="animate-slide-left" style="margin-top: 1.5rem; margin-bottom: 2.5rem; animation-delay: 0.2s;">
+                    Learn to prepare Canadian tax returns under CRA rules, supervise clinic work, and earn your CRA
+                    CVITP
+                    certificate. Make a real difference for newcomers and seniors.
+                </p>
+                <div class="animate-fade-up" style="display: flex; gap: 1rem; flex-wrap: wrap; animation-delay: 0.4s;">
+                    <a href="https://forms.gle/your-form-link" target="_blank" class="btn-orange hover-float">
+                        Apply to Volunteer <i class="fa-solid fa-arrow-right" style="margin-left: 0.5rem;"></i>
+                    </a>
+                    <a href="#how-it-works" class="btn-outline-white hover-float">Learn how it works</a>
+                </div>
+                <div style="margin-top: 2rem; display: flex; align-items: center; gap: 0.5rem; opacity: 0.8;">
+                    <i class="fa-solid fa-check-circle" style="color: #4ade80;"></i>
+                    <span style="font-size: 0.9rem; color: #cbd5e1;">Fyn IQ participates in CVITP and provides
+                        comprehensive training.</span>
+                </div>
+            </div>
+        </div>
+        <!-- Decorative bg element - Replaced with Image -->
+        <div class="animate-pop-in"
+            style="position: absolute; right: -50px; top: 50%; transform: translateY(-50%); width: 500px; height: 500px; border-radius: 50%; overflow: hidden; border: 8px solid rgba(255,255,255,0.1); box-shadow: 0 20px 50px rgba(0,0,0,0.2);">
+            <img src="volunteer-hero.jpg" alt="Volunteers helping community"
+                style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+    </section>
+
+
+    <!-- About the Program -->
+    <section id="about">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                <div class="animate-fade-up">
+                    <h2 class="section-heading-deep">About the Program</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 1.1rem;">
+                        FYN IQ runs CRA-approved <strong>CVITP clinics</strong> to help people with modest incomes file
+                        accurate tax returns for free.
+                    </p>
+                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+                        Our volunteers receive structured training, supervised clinic shifts, and guidance to complete
+                        CRA’s certification requirements. We believe in empowering our community through financial
+                        literacy.
+                    </p>
+                    <p style="color: var(--text-secondary);">
+                        We run virtual and in-person clinics and partner with community groups to reach newcomers,
+                        seniors, and students who need help navigating the Canadian tax system.
+                    </p>
+                </div>
+                <div class="animate-slide-right">
+                    <img src="volunteer-about.jpg" alt="Volunteers working together"
+                        style="width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Volunteer -->
+    <section class="bg-secondary" id="benefits">
+        <div class="container">
+            <div class="animate-fade-up" style="text-align: center; margin-bottom: 3rem;">
+                <h2 class="section-heading-deep">Why Volunteer?</h2>
+                <p style="color: var(--text-secondary);">Gain skills, get certified, and give back.</p>
+            </div>
+
+            <div class="features-grid stagger-container">
+                <!-- Benefit 1 -->
+                <div class="feature-card stagger-item hover-float"
+                    style="display: flex; flex-direction: row; align-items: flex-start;">
+                    <div class="benefit-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div>
+                        <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--primary-deep);">Learn Tax
+                            Prep</h3>
+                        <p style="font-size: 0.95rem; color: var(--text-secondary);">Learn to prepare Canadian tax
+                            returns under CRA guidance and professional supervision.</p>
+                    </div>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="feature-card stagger-item hover-float"
+                    style="display: flex; flex-direction: row; align-items: flex-start;">
+                    <div class="benefit-icon" style="background: #fff7ed; color: var(--accent-orange);"><i
+                            class="fa-solid fa-certificate"></i></div>
+                    <div>
+                        <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--primary-deep);">Earn CRA
+                            Certificate</h3>
+                        <p style="font-size: 0.95rem; color: var(--text-secondary);">We facilitate your training and
+                            help you obtain the official CRA CVITP certificate.</p>
+                    </div>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="feature-card stagger-item hover-float"
+                    style="display: flex; flex-direction: row; align-items: flex-start;">
+                    <div class="benefit-icon" style="background: #f0fdf4; color: #16a34a;"><i
+                            class="fa-solid fa-users"></i></div>
+                    <div>
+                        <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--primary-deep);">Serve
+                            Community</h3>
+                        <p style="font-size: 0.95rem; color: var(--text-secondary);">Help newcomers, seniors, and
+                            low-income filers get the benefits they deserve.</p>
+                    </div>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="feature-card stagger-item hover-float"
+                    style="display: flex; flex-direction: row; align-items: flex-start;">
+                    <div class="benefit-icon" style="background: #f3f4f6; color: #475569;"><i
+                            class="fa-solid fa-briefcase"></i></div>
+                    <div>
+                        <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--primary-deep);">Career
+                            Boost</h3>
+                        <p style="font-size: 0.95rem; color: var(--text-secondary);">Gain real-world experience. Top
+                            performers may be offered paid roles at FYN IQ.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program At A Glance -->
+    <section>
+        <div class="container">
+            <div
+                style="background: var(--primary-deep); border-radius: var(--radius-lg); padding: 3rem; color: white; position: relative; overflow: hidden;">
+                <!-- background pattern -->
+                <div
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.05; background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 20px 20px;">
+                </div>
+
+                <div class="animate-fade-up" style="position: relative; z-index: 1;">
+                    <h2
+                        style="color: white; margin-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 1rem;">
+                        Program at a Glance</h2>
+
+                    <div class="stagger-container"
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem;">
+                        <div class="stagger-item">
+                            <h4 style="color: var(--accent-orange); margin-bottom: 0.5rem; font-size: 1.1rem;">Who can
+                                apply?</h4>
+                            <p style="color: #e2e8f0;">Anyone 18+ who wants tax-preparation experience. No professional
+                                tax license required — we train you.</p>
+                        </div>
+                        <div class="stagger-item">
+                            <h4 style="color: var(--accent-orange); margin-bottom: 0.5rem; font-size: 1.1rem;">Format
+                            </h4>
+                            <p style="color: #e2e8f0;">Online training + supervised clinic shifts. We offer both virtual
+                                and in-person options.</p>
+                        </div>
+                        <div class="stagger-item">
+                            <h4 style="color: var(--accent-orange); margin-bottom: 0.5rem; font-size: 1.1rem;">Time
+                                Commitment</h4>
+                            <p style="color: #e2e8f0;">Training: ~ 8–12 hours (2–3 sessions).<br>Clinic shifts:
+                                Flexible.</p>
+                        </div>
+                        <div class="stagger-item">
+                            <h4 style="color: var(--accent-orange); margin-bottom: 0.5rem; font-size: 1.1rem;">Outcome
+                            </h4>
+                            <p style="color: #e2e8f0;">CRA CVITP certificate and direct clinic experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works (Timeline) -->
+    <section id="how-it-works" class="timeline-section">
+        <div class="container">
+            <div class="animate-fade-up" style="text-align: center;">
+                <h2 class="section-heading-deep">How It Works</h2>
+                <p style="color: var(--text-secondary);">From applicant to certified tax preparer in 5 steps.</p>
+            </div>
+
+            <div class="timeline-steps stagger-container">
+                <div class="timeline-step stagger-item">
+                    <div class="step-number" style="border-color: var(--accent-orange); color: var(--accent-orange);">1
+                    </div>
+                    <h3 class="step-title">Apply</h3>
+                    <p class="step-desc">Fill the volunteer form to express your interest.</p>
+                </div>
+                <div class="timeline-step stagger-item">
+                    <div class="step-number" style="border-color: var(--accent-orange); color: var(--accent-orange);">2
+                    </div>
+                    <h3 class="step-title">Screening</h3>
+                    <p class="step-desc">Short call to confirm language & availability.</p>
+                </div>
+                <div class="timeline-step stagger-item">
+                    <div class="step-number" style="border-color: var(--accent-orange); color: var(--accent-orange);">3
+                    </div>
+                    <h3 class="step-title">Training</h3>
+                    <p class="step-desc">Live online sessions and practice cases.</p>
+                </div>
+                <div class="timeline-step stagger-item">
+                    <div class="step-number" style="border-color: var(--accent-orange); color: var(--accent-orange);">4
+                    </div>
+                    <h3 class="step-title">Clinic Shifts</h3>
+                    <p class="step-desc">Supervised sessions preparing real returns.</p>
+                </div>
+                <div class="timeline-step stagger-item">
+                    <div class="step-number" style="border-color: var(--accent-orange); color: var(--accent-orange);">5
+                    </div>
+                    <h3 class="step-title">Certified</h3>
+                    <p class="step-desc">Receive your CRA certificate.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="https://forms.gle/your-form-link" target="_blank"
+                    class="btn-orange hover-float animate-pop-in">Start Application</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Roles -->
+    <section class="bg-secondary" id="training">
+        <div class="container">
+            <div class="animate-fade-up" style="text-align: center; margin-bottom: 3rem;">
+                <h2 class="section-heading-deep">Volunteer Roles</h2>
+                <p style="color: var(--text-secondary);">Find the position that fits you best.</p>
+            </div>
+
+            <div class="grid-container stagger-container"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                <div class="role-card stagger-item hover-float">
+                    <h3 style="color: var(--primary-deep); margin-bottom: 0.5rem;">Trainee Tax Preparer</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">The core role. Learn tax law, use
+                        professional software, and prepare returns for simple tax situations.</p>
+                </div>
+
+                <div class="role-card stagger-item hover-float">
+                    <h3 style="color: var(--primary-deep); margin-bottom: 0.5rem;">Client Intake Support</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">First point of contact. Verify ID,
+                        gather documents, and book appointments for clients.</p>
+                </div>
+
+                <div class="role-card stagger-item hover-float">
+                    <h3 style="color: var(--primary-deep); margin-bottom: 0.5rem;">Reviewer / Supervisor</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">For advanced volunteers. Review returns
+                        completed by trainees before filing to ERA.</p>
+                </div>
+
+                <div class="role-card stagger-item hover-float">
+                    <h3 style="color: var(--primary-deep); margin-bottom: 0.5rem;">Outreach Ambassador</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Connect with community groups
+                        (newcomers,
+                        Ethiopian & Eritrean associations) to promote the service.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- For Clients -->
+    <section id="clients">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div class="animate-fade-up"
+                    style="background: white; border: 2px solid var(--border-light); border-radius: var(--radius-lg); padding: 3rem; text-align: center; box-shadow: var(--shadow-sm);">
+                    <div
+                        style="width: 64px; height: 64px; background: #e0e7ff; color: var(--primary-deep); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin: 0 auto 1.5rem;">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                    </div>
+                    <h2 class="section-heading-deep" style="font-size: 2rem;">Do you need free tax help?</h2>
+                    <p style="max-width: 600px; margin: 1rem auto; color: var(--text-secondary);">
+                        If you or someone you know needs free tax filing, we serve Toronto and surrounding areas with
+                        virtual
+                        assistance.
+                    </p>
+                    <div style="margin-top: 2rem;">
+                        <a href="#" class="cta-button secondary"
+                            style="color: var(--primary-deep); border-color: var(--primary-deep);">I Need Tax
+                            Help</a>
+                    </div>
+                </div>
+                <div class="animate-pop-in" style="transition-delay: 0.2s;">
+                    <img src="volunteer-clients-2.png" alt="Volunteer helping client"
+                        style="width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="bg-secondary">
+        <div class="container" style="max-width: 800px;">
+            <div class="animate-fade-up" style="text-align: center; margin-bottom: 3rem;">
+                <h2 class="section-heading-deep">Common Questions</h2>
+            </div>
+            <div class="accordion animate-fade-up">
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Do I need prior tax experience?
+                        <span class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>No. We train volunteers from scratch. All you need is a willingness to learn and comfort
+                            using
+                            computers.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Will I get a CRA certificate?
+                        <span class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Yes. FYN IQ provides the training and supports volunteers through the specific steps required
+                            to obtain the CRA CVITP certificate.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Is this paid work?
+                        <span class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Training and clinic work are volunteer positions. However, outstanding volunteers who
+                            demonstrate excellence may be offered paid employment opportunities with FYN IQ in the
+                            future.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        How do I apply?
+                        <span class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Simply click the "Apply" button on this page and complete the Google Form. Our team will
+                            follow up with you via email to schedule a screening call.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer style="background: #0B3D91; color: white;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem;">
+                <div>
+                    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1.5rem;">
+                        <div
+                            style="background: white; color: #0B3D91; width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: bold;">
+                            F</div>
+                        <h3 style="margin:0; font-family: 'Outfit', sans-serif;">FYN IQ</h3>
+                    </div>
+                    <p style="color: rgba(255,255,255,0.7); margin-bottom: 1.5rem;">
+                        Empowering communities through financial literacy and volunteer service.
+                    </p>
+                    <div style="display: flex; gap: 1rem;">
+                        <a href="#" style="color: white; font-size: 1.25rem;"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" style="color: white; font-size: 1.25rem;"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 style="margin-bottom: 1.5rem;">Contact</h4>
+                    <p style="margin-bottom: 0.5rem;"><i class="fa-solid fa-envelope" style="margin-right: 0.5rem;"></i>
+                        antenehlf@gmail.com</p>
+                    <p><i class="fa-solid fa-location-dot" style="margin-right: 0.5rem;"></i> Toronto, ON (Virtual
+                        Clinics)</p>
+                </div>
+
+                <div>
+                    <h4 style="margin-bottom: 1.5rem;">Partnerships</h4>
+                    <p style="color: rgba(255,255,255,0.7);">
+                        We welcome community partners, including Ethiopian & Eritrean organizations and other community
+                        groups.
+                    </p>
+                </div>
+            </div>
+            <div
+                style="border-top: 1px solid rgba(255,255,255,0.2); margin-top: 3rem; padding-top: 2rem; text-align: center; color: rgba(255,255,255,0.5); font-size: 0.9rem;">
+                &copy; 2026 FYN IQ. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Use existing script for animations and FAQ -->
+    <script src="script.js"></script>
+</body>
+
+</html>

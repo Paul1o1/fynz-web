@@ -72,12 +72,19 @@ const observer = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('visible');
             entry.target.classList.add('show-animate'); // Trigger for specific animations
+
+            // Handle staggered children if parent is observed
+            if (entry.target.classList.contains('stagger-container')) {
+                // Logic is handled via CSS descendant selectors .stagger-container.visible .stagger-item
+                // But we ensure the parent gets the visible class here.
+            }
+
             observer.unobserve(entry.target);
         }
     });
 }, observerOptions);
 
-document.querySelectorAll('.animate-fade-up, .animate-slide-left, .animate-slide-right, .animate-zoom-in').forEach(el => {
+document.querySelectorAll('.animate-fade-up, .animate-slide-left, .animate-slide-right, .animate-zoom-in, .animate-pop-in, .stagger-container').forEach(el => {
     observer.observe(el);
 });
 
@@ -137,3 +144,36 @@ if (tuitionInput && tuitionRange) {
     // Initialize for Student Page
     updateStudentValues(8000);
 }
+
+// --- 3D Tilt Animation Logic ---
+document.querySelectorAll('.tilt-card').forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        // Calculate percentage position (0-1)
+        const xPct = x / rect.width;
+        const yPct = y / rect.height;
+
+        // Calculate rotation (max +/- 10 degrees)
+        const xRot = (yPct - 0.5) * 20; // Rotate X axis based on Y position (tilt up/down)
+        const yRot = (xPct - 0.5) * -20; // Rotate Y axis based on X position (tilt left/right)
+
+        card.style.transform = `perspective(1000px) rotateX(${xRot}deg) rotateY(${yRot}deg) scale3d(1.02, 1.02, 1.02)`;
+    });
+
+    card.addEventListener('mouseleave', () => {
+        card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+    });
+});
+
+// --- Parallax Background Logic ---
+const parallaxBgs = document.querySelectorAll('.parallax-bg');
+window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    parallaxBgs.forEach(bg => {
+        const speed = 0.5;
+        bg.style.transform = `translateY(${scrollY * speed}px)`;
+    });
+});
